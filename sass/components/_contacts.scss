@@ -1,0 +1,63 @@
+.contacts {
+    padding-bottom: 10.5rem;
+}
+
+.contacts__wrap {
+    display: flex;
+}
+
+.contacts__column.left {
+    background: url(./../img/image-1.jpg),rgba(243, 231, 198, 0.60);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5.2rem 2rem 12.4rem 5.3rem;
+    width: 71.3rem;
+}
+.contacts__block address {
+    margin: 7.9rem 0 2.8rem 0;
+    @include font ($size: 2.5rem, $height: 1.3, $weight: 700, $style: normal);
+    color: $color-text;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+        color: $color-add;
+        transition: all .3s;
+    }
+}
+
+.contacts__block a {
+    @include font ($size: 2.5rem, $height: 1.3, $weight: 700, $style: normal);
+    color: $color-text;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+        color: $color-add;
+        transition: all .3s;
+    }
+}
+.contacts__btn button {
+    padding: 14px 35px 14px 35px;
+    text-align: center;
+    @include font ($size: 2.5rem, $height: 1.3, $weight: 700, $style: normal);
+    color: $color-background;
+    text-transform: uppercase;
+    background-color: $color-add;
+    border-radius: 5px;
+    transition: all .3s;
+    display: inline-block;
+    margin-top: 4.8rem;
+    &:hover {
+        background-color: $color-add;
+        color: #999;
+        transition: all .3s;
+    }
+}
+
+.contacts__column.right iframe {
+    width: 80.8rem;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}

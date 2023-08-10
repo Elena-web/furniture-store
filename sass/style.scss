@@ -1,0 +1,21 @@
+// Abstracts
+@import "abstracts/constants";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+//* Base
+@import "base/base";
+@import "base/button";
+
+//Components
+@import "components/header";
+@import "components/content";
+@import "components/advantages";
+@import "components/catalog";
+@import "components/popular-products";
+@import "components/categories";
+@import "components/sale-items";
+@import "components/projects";
+@import "components/contacts";
+@import "components/our-works";
+@import "components/footer";

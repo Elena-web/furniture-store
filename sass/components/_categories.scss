@@ -1,0 +1,37 @@
+.categories {
+    padding: 7.2rem 0 7.6rem;
+}
+
+.categories__menu {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    margin-top: 4.1rem;
+}
+
+.categories__btn {
+    margin-right: 3.4rem;
+}
+
+.categories__btn a {
+    padding: 1.1rem 3rem;
+    border-radius: 5px;
+    border: 1px solid $color-add;
+    @include font ($size: 1.8rem, $height: 1.3, $weight: 400, $style: normal);
+    color: $color-add;
+    text-transform: uppercase;
+    background-color: $color-background;
+    display: inline-block;
+    transition: all .3s;
+    &:hover {
+        background-color: $color-add;
+        color: #999;
+        transition: all .3s;
+    }
+}
+
+.categories__btn.color a  {
+    background-color: $color-add;
+    color: $color-background;
+    transition: all .3s;
+}

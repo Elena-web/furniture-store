@@ -1,0 +1,65 @@
+.sale-items{
+    padding-bottom: 6rem;
+}
+
+.sale-items__slick {
+    margin: 4.1rem 0 0 0;
+    position: relative;
+}
+
+.sale-items__slick .slick-slide {
+    margin: 15px;
+}
+
+.sale-items .product__wrapper:hover .product {
+    position: relative;
+    z-index: 10;
+}
+
+.sale-items__slick .product__wrapper {
+    height: auto;
+}
+
+.sale-items__slick .slick-list {
+    margin: -15px;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 43%;
+    left: -2%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.10));
+    background-color:$color-background;
+    z-index: 2;
+}
+
+.slick-next {
+    padding: 2.2rem;
+    position: absolute;
+    top: 43%;
+    right: -2%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.10));
+    background-color:$color-background;
+}
+
+.slick-arrow.slick-next{
+    background-image: url(./../img/icon/arrow-next.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
+
+.slick-arrow.slick-prev{
+    background-image: url(./../img/icon/arrow-prev.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
+
+

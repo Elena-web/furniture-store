@@ -1,0 +1,317 @@
+.header__top {
+    border-bottom: 1px solid $color-border;
+    padding: 1.7rem 0 1.2rem 0;
+}
+
+.nav, .header__top-wrap, .header__top-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.city__top {
+    @include font ($size: 1.8rem, $height: 1.3, $weight: 400, $style: normal);
+    color: $color-text;
+}
+
+.city__top a {
+    display: flex;
+    align-items: center;
+    color: $color-text;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav__list li {
+    @include font ($size: 1.8rem, $height: 1.3, $weight: 400, $style: normal);
+    color: $color-text;
+    margin-right: 3.8rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav__list.right li {
+    margin-right: 5.6rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav__list li .active {
+    @include font ($size: 1.8rem, $height: 1.3, $weight: 700, $style: normal);
+}
+
+.nav__list li a {
+    display: flex;
+    align-items: center;
+    color: $color-text;
+    transition: color .3s;
+    &:hover {
+        color: $color-red;
+        transition: color .3s;
+    }
+}
+
+.location {
+    background-image: url(./../img/icon/1.svg);
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-size: cover;
+    margin-right: .6rem;
+}
+
+.arrow {
+    background-image: url(./../img/icon/arrow-down.svg);
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-size: cover;
+    margin-left: .2rem;
+}
+
+.header__bottom {
+    padding: 1.2rem 0 1.4rem 0;
+    align-items: center;
+}
+
+.header__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 18.9rem;
+    height: 3.9rem;
+    margin-right: 9.9rem;
+}
+.header__adress .address {
+    @include font ($size: 1.8rem, $height: 1.3, $weight: 400, $style: normal);
+}
+.header__adress {
+    display: flex;
+    flex-direction: column;
+    @include font ($size: 1.8rem, $height: 1.3, $weight: 400, $style: normal);
+    color: $color-text;
+    margin-right: 6.7rem;
+    a {
+        color: $color-red;
+        text-decoration: underline;
+        transition: color .3s;
+        &:hover {
+            color: #626262;
+            transition: color .3s;
+        }
+    }
+}
+
+.header__search {
+    display: flex;
+    justify-content: space-between;
+    width: 29.6rem;
+    height: 4.5rem;
+    border-radius: 25px;
+    border: 1px solid $color-menu;
+    padding: 1rem 1.7rem 1.2rem 2.5rem;
+    margin-right: 7.2rem;
+}
+
+.header__search input {
+    @include font ($size: 1.6rem, $height: normal, $weight: 400, $style: normal);
+    color: #626262;
+}
+
+.btn.search span {
+    background-image: url(./../img/icon/search.svg);
+    background-color: $color-background;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-size: cover;
+}
+
+.header__block {
+    display: flex;
+    flex-direction: column;
+    @include font ($size: 1.8rem, $height: 1.3, $weight: 400, $style: normal);
+    color: $color-text;
+}
+
+.header__block.phone {
+    align-items: flex-end;
+    margin-right: 9.1rem;
+}
+
+.header__block.phone a {
+    @include font ($size: 2.2rem, $height: normal, $weight: 700, $style: normal);
+    color: $color-text;
+    transition: color .3s;
+    &:hover {
+        color: $color-red;
+        transition: color .3s;
+    }
+}
+
+.header__block.phone a svg {
+    margin-right: 1rem;
+    &:hover {
+        fill: $color-red;
+    }
+}
+
+.header__block.phone a:hover .svg-color {
+    margin-right: 1rem;
+    fill: $color-red;
+    transition: color .3s;
+}
+
+.header__block.phone .button {
+    width: 17.7rem;
+    height: 3.5rem;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid $color-red;
+    @include font ($size: 1.6rem, $height: normal, $weight: 400, $style: normal);
+    color: $color-red;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-background;
+    margin-top: .5rem;
+    &:hover {
+        border: 1px solid $color-text;
+        color: $color-text;
+        transition: color .3s;
+    }
+}
+
+.header__list {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header__list li a {
+    display: flex;
+    flex-direction: column;
+    @include font ($size: 1.8rem, $height: 1.3, $weight: 400, $style: normal);
+    transition: color .3s;
+    &:hover {
+        color: $color-red;
+        transition: color .3s;
+     }
+}
+.header__list li a:hover .svg-color {
+    fill: $color-red;
+    transition: color .3s;
+}
+.log {
+    margin-right: 3.9rem;
+}
+
+.log svg, .basket svg {
+    margin: 0 auto 1rem auto ;
+}
+
+.like {
+    margin-right: 2.8rem;
+}
+
+.like__row {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.like p {
+    width: 3.6rem;
+    height: 1.9rem;
+    background-color: $color-red;
+    border-radius: 7px;
+    color: $color-background;
+    text-align: center;
+    @include font ($size: 1.4rem, $height: 1.3, $weight: 400, $style: normal);
+    margin-left: 1.4rem;
+}
+
+.header__menu {
+    background-color: $color-menu;
+}
+
+.menu, .header__menu-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    flex: 1;
+    padding-right: 5%;
+}
+
+.menu li {
+    position: relative;
+    padding: 1.8rem 2.2rem;
+}
+
+.menu li > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $color-background;
+    width: 21.7rem;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.10);
+    z-index: 1;
+    transform: translateY(15px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.menu li:hover > ul {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
+}
+
+.menu li > ul li {
+    padding: 0;
+}
+
+.menu li > ul li a {
+    @include font ($size: 1.8rem, $height: 1.3, $weight: 400, $style: normal);
+    color: $color-text;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    display: block;
+    transition: all .3s;
+    &:hover {
+        background-color: #F4F4F4;
+        color: $color-add;
+        transition: all .3s;
+    }
+}
+
+.menu__item {
+    @include font ($size: 2rem, $height: 1.3, $weight: 700, $style: normal);
+    text-transform: uppercase;
+    color: $color-text;
+    transition: all .3s;
+    &:hover {
+        color: #999;
+    }
+}
+
+.menu__item.btn {
+    border-radius: 5px;
+    background: $color-add;
+    color: $color-background;
+    padding: 1.8rem 1.2rem 1.8rem 1.6rem;
+    &:hover {
+        color: #999;
+    }
+}
+
